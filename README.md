@@ -1,6 +1,6 @@
 # Desafio Client Server API
 
-Aluno: Esdras Santos
+Aluno: Esdras Santos de Oliveira
 
 Este projeto implementa o desafio de Client Server API em Go. A aplicação possui um servidor HTTP que consulta a cotação do dólar, grava o resultado em SQLite e entrega o valor atual para um cliente. O cliente consulta o servidor e salva a cotação em um arquivo de texto.
 
@@ -19,7 +19,6 @@ Este projeto implementa o desafio de Client Server API em Go. A aplicação poss
 
 ```text
 .
-├── .tool-versions
 ├── cmd
 │   ├── client
 │   │   └── main.go
@@ -43,13 +42,6 @@ Entre na pasta do desafio:
 
 ```bash
 cd "DESAFIO 1 - Client Server Api Esdras Santos"
-```
-
-Se ainda não tiver Go configurado no `asdf`, rode:
-
-```bash
-asdf plugin add golang
-asdf install
 ```
 
 Inicie o servidor:
