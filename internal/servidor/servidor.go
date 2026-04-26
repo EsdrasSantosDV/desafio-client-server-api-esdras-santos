@@ -12,7 +12,7 @@ import (
 
 	"client-server-api-esdras/internal/cotacao"
 
-	_ "github.com/mattn/go-sqlite3"
+	_ "modernc.org/sqlite"
 )
 
 const (
@@ -27,7 +27,7 @@ type Servidor struct {
 }
 
 func Novo(endereco, arquivoBanco string) (*Servidor, error) {
-	db, err := sql.Open("sqlite3", arquivoBanco)
+	db, err := sql.Open("sqlite", arquivoBanco)
 	if err != nil {
 		return nil, err
 	}
